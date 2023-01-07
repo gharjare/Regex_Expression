@@ -6,9 +6,9 @@
         {
             Pattern pattern = new Pattern();
             Console.WriteLine("please enter the pattern");
-            string password = Console.ReadLine();
+            string upper = Console.ReadLine();
 
-            bool value = pattern.ValidateNumeric(password);
+            bool value = pattern.ValidateUpper(upper);
 
             if (value)
             {
