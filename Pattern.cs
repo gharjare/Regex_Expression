@@ -9,11 +9,11 @@ namespace RegularExpression1
 {
     public class Pattern
     {
-        public static string Regex_FirstName = "^[A-Z]{1}[a-z]{2,10}$";
+        public static string Regex_LastName = "^[A-Z]{1}[a-z]{2,10}$";
 
         public bool ValidateName(string name)
         {
-            return Regex.IsMatch(name, Regex_FirstName);
+            return Regex.IsMatch(name, Regex_LastName);
         }
     }
 }
