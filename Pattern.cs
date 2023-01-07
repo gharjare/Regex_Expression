@@ -9,10 +9,10 @@ namespace RegularExpression1
 {
     public class Pattern
     {
-        public static string Regex_Numeric = "((?=.*[A-Z])(?=.*[0-9]).{8,})";
-        public bool ValidateNumeric(string Numeric)
+        public static string Regex_Upper = "((?=.*[A-Z]).{8,})";
+        public bool ValidateUpper(string Upper)
         {
-            return Regex.IsMatch(Numeric, Regex_Numeric);
+            return Regex.IsMatch(Upper, Regex_Upper);
         }
     }
 }
