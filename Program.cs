@@ -6,9 +6,9 @@
         {
             Pattern pattern = new Pattern();
             Console.WriteLine("please enter the pattern");
-            string email = Console.ReadLine();
+            string number = Console.ReadLine();
 
-            bool value = pattern.ValidateEmail(email);
+            bool value = pattern.ValidateNumber(number);
 
             if (value)
             {
