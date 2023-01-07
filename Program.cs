@@ -6,9 +6,9 @@
         {
             Pattern pattern = new Pattern();
             Console.WriteLine("please enter the pattern");
-            string numinpassword = Console.ReadLine();
+            string spchar = Console.ReadLine();
 
-            bool value = pattern.ValidateNumeric(numinpassword);
+            bool value = pattern.ValidateCharacter(spchar);
 
             if (value)
             {
