@@ -9,11 +9,11 @@ namespace RegularExpression1
 {
     public class Pattern
     {
-        public static string Regex_Email = "^[0-9a-zA-Z]+[./+_-]{0,1}[0-9a-zA-Z]+[@][a-zA-Z0-9-]+[.][a-zA-Z]{2,}([.][a-zA-Z]{2,}){0,1}$";
+        public static string Regex_PhoneNumber = "^(91)[6-9]{1}[0-9]{9}$";
 
-        public bool ValidateEmail(string Email)
+        public bool ValidateNumber(string number)
         {
-            return Regex.IsMatch(Email, Regex_Email);
+            return Regex.IsMatch(number, Regex_PhoneNumber);
         }
     }
 }
